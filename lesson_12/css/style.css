@@ -221,7 +221,7 @@ z-index: -1;}
 
   @keyframes color { 
  
-     0% { background-color:  radial-gradient(circle,  rgba(243,219,79,0.8183648459383753) 47%, rgba(252,195,70,1) 75%); } 
+     0% { background-color  rgba(243,219,79,0.8183648459383753) 47%, rgba(252,195,70,1) 75%); } 
     90% { background-color:  rgb(201, 201, 132) }
     100% { background-color:  rgb(245, 245, 171); } }
 
