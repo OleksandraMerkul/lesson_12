@@ -1,0 +1,284 @@
+
+@import url(https://fonts.googleapis.com/css?family=Epilogue:400,800);
+@import url("reset.css");
+@import url("fonts.css"); 
+
+
+
+.block__wrapper{
+  max-width: 1700px;
+ height: 2000px;
+    margin: 0 auto;
+    /* background-image: url("../img/road.jpg");  */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    z-index:0;
+}
+.top-element__signal-light {
+  width: 130px;
+  height: 50px;
+  border-radius: 20px 0px 0px 20px;
+  background-color: blue;
+position: absolute;
+left: 450px;
+top: 365px;
+animation-name: color-light;
+animation-duration: 2s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+}
+.top-element__signal-light--red {
+  width: 130px;
+  height: 50px;
+  border-radius: 0px 20px 20px 0px;
+  background-color: red;
+position: absolute;
+left: 653px;
+top: 365px;
+animation-name: color-light;
+animation-duration: 2s;
+animation-delay: 0.5s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+}
+.top-element__glas-wrapper {
+width: 800px;
+height: 300px;
+perspective: 1200px;
+position: relative;
+left: 173px;
+top: 350px;
+border-radius: 20px;
+}
+
+.top-element__glass{
+width: 100%;
+height: 100%;
+transform: rotateX(45deg); 
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(168,226,237,0.5662640056022409) 41%);
+
+border-radius: 20px;
+border: solid  white 30px;
+z-index: -1;}
+
+
+
+.top-element__steering-wheel{
+width: 150px; 
+height: 150px; 
+border-radius: 50%;
+border: 20px outset rgb(22, 21, 21);
+ position: absolute;
+top: 200px;  
+left: 600px;
+z-index: -1;
+animation-name: rotate-element;
+animation-duration: 5s;
+animation-iteration-count:infinite;
+animation-direction:alternate;}
+    
+  
+.middle-element__hood{ width: 1000px;
+height: 150px;
+margin: 0 auto;
+background-color: white;
+border-radius: 30px;
+position: relative;
+left:0px;
+top: 370px;}
+
+
+.middle-element__light-right{
+width: 110px; 
+height: 110px;
+/* background: radial-gradient(circle,  rgba(243,219,79,0.8183648459383753) 47%, rgba(252,195,70,1) 75%); */
+border-radius: 50%;
+border: black 1px solid;
+position: absolute;
+top: 0px;
+left: 560px;
+animation-name: color;
+animation-duration: 5s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+}
+
+
+.middle-element__light-left{
+width: 110px; 
+height: 110px;
+/* background: radial-gradient(circle, rgba(243,219,79,0.8183648459383753) 47%, rgba(252,195,70,1) 75%); */
+border-radius: 50%;
+border: black 1px solid;
+position: absolute;
+top: 0px;
+left: -160px;
+animation-name: color;
+animation-duration: 5s;
+animation-iteration-count:infinite;
+animation-direction:alternate;}
+
+
+
+.middle-element__radiator-container {width: 500px;
+height: 80px;
+
+perspective: 400px;
+position: absolute;
+top: 0px;
+left: 250px;}
+
+.middle-element__radiator {
+width: 100%;
+height: 100%;
+transform: rotateX(-45deg); 
+background: rgb(124,136,136);
+background: linear-gradient(0deg, rgba(124,136,136,1) 17%, rgba(57,55,50,1) 64%);
+border-radius: 10px;
+position: absolute;
+left: 0px;
+top: -20px;
+z-index: 2;
+}
+
+.middle-element__line {width: 500px;
+height:20px;
+border-radius:5px;
+background-color: rgb(5, 5, 17);;
+position: absolute;
+top:60px;
+left: 0px;
+animation-name: rotate-element;}
+
+.middle-element__name {
+  font-family:Epilogue;
+  color: rgb(5, 5, 17);
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 20px;
+  position: absolute;
+top: 85px;
+left:110px}
+
+.bottom-element__bumper {width: 1020px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color:  rgb(5,5,17);
+    position: relative;
+    left: 0px;
+    top:350px;
+  
+}
+    
+    .bottom-element__number {
+    width: 200px;
+    height: 30px;
+    font-family: Epilogue;
+    font-size: 20px;
+    
+    border-radius: 5px;
+    background-color: hwb(60 64% 35%);
+    position: absolute;
+    top: 0px;
+    left:390px;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    
+    padding: 15px;}
+    
+
+
+.bottom-element__right-wheel {width: 120px;
+height: 110px; border-radius: 0px 0px 20px 20px;
+background-color: black;
+position: absolute;
+top: 50px;
+left: 60px;
+z-index: -1;}
+
+.bottom-element__left-wheel {width: 120px;
+height: 110px; border-radius: 0px 0px 20px 20px;
+background-color: black;
+position: absolute;
+top:50px; left: 845px;
+z-index: -1;}
+
+
+
+  @keyframes rotate-element {
+    0% {
+      transform: rotate(60deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  @keyframes color { 
+ 
+     0% { background-color:  radial-gradient(circle,  rgba(243,219,79,0.8183648459383753) 47%, rgba(252,195,70,1) 75%); } 
+    90% { background-color:  rgb(201, 201, 132) }
+    100% { background-color:  rgb(245, 245, 171); } }
+
+      
+         
+    
+    @keyframes color-light { 
+ 
+      0% { background-color:  #ff0000 } 
+      20% { background-color:  #ffffff}
+     40% { background-color:  #0000ff}
+     75% { background-color:  #ffffff} }
+
+
+     
+.block__road-wrapper {
+  width: 1200px;
+  height: 1400px;
+  perspective: 700px;
+  position: relative;
+  left: 130px;
+  top: 360px;
+;
+  
+  }
+  .block__road{
+  width: 100%;
+  height: 100%;
+  transform: rotateX(45deg); 
+  background: grey;
+  position: absolute;
+  border: double 10px white;
+  z-index: -1;
+  }
+  .block__road-line {
+    width: 60px;
+    height: 200px;
+    background-color: hsl(49, 100%, 50%);
+    transform: rotateX(45deg); 
+    position: absolute;
+    left: 570px;
+    top: 2000px;
+    animation-name: top; 
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+  }
+
+   @keyframes top {
+
+    0%{
+    bottom: 0%;
+    }
+    99%{
+    top: 50%;
+    }
+    100%{
+        top: 100%;
+    }
+  } 
